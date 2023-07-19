@@ -1,0 +1,256 @@
+* {
+    padding: 0;
+}
+
+body{
+    height: auto;
+    max-width: 1700px;
+    margin: auto;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.content img {
+    width: 100%;
+    background-size: cover;  
+    background-repeat: no-repeat;
+} 
+
+.top_content {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.top_content h1{
+    color: #bfa065;
+    font-size: 76px;
+    font-weight:bolder;
+    padding-top: 50px;
+}
+
+.top_content p {
+    padding-top: 50px;
+    width: fit-content;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #808080;
+}
+
+.content button {
+    color: #808080;
+    margin-top: 50px;
+    padding: 10px 30px;
+    border-width: 2px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #bfa065;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: none;
+} 
+
+.boxes {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    left:50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    margin-top: -6rem;
+    gap: 30px;
+    justify-content: center;
+}
+
+.boxes h2 {
+    text-align: center;
+}
+
+.boxes p {
+    padding: 0 20px;
+    color: #808080;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px;
+}
+
+.boxes .left_box, .middle_box, .right_box {
+    padding: 30px 10px;
+    background-color: #ffffff;
+}
+
+.container2 {
+    display: flex;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.text_content{
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    background-color: #ffffff;
+    transform: translateX(-50%);
+    margin-top: 19rem;
+}
+
+.text_content h1 {
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 700;
+}
+
+.text_content p {
+    padding: 0 20px; 
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 30px;
+}
+
+.row_food_images {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;                 
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    margin-top: 30rem;
+    gap: 10px;
+}
+
+.row_food_images img {
+    object-fit: cover;
+    height: 300px;
+    width: 25%;
+}
+
+.container2 .row_food_images img {
+    background-color: #ffffff;
+
+}
+
+.container3 {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 6rem;
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.text_content2 {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.text_content2 h1 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.text_content2 p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.container3 .text_container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.text_container .text {
+    padding: 50px;
+}
+
+.text_container .text p{
+    color: #808080; 
+}
+
+.container3 button {
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+    color: #808080;
+    padding: 10px 30px;
+    border-width: 2px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #bfa065;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: none;
+    
+} 
+
+.container4 {
+    display: flex;
+    position: relative;
+    justify-content: center;    
+    align-items: center;  
+    padding: 30px;
+}
+
+.container4 img {
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+}
+
+.container4 .box2, .box4{
+    box-sizing: border-box;
+    border: solid #bfa065;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+}
+
+.container5 {
+    display: flex;
+    position: relative;
+    background-color: #f2f2f2;
+}
+
+.container5 img{
+    width: 50%;
+}
+
+.container5 .last_content{
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    padding-left: 50px;
+}
+
+.container5 button {
+    color: #808080;
+    padding: 10px 30px;
+    border-width: 2px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #bfa065;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    background: none;
+}
+
+.footer {
+    text-align: center;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #333333;
+    margin: auto;
+    padding: 50px;
+    text-decoration: none;
+}
+
+.footer a {
+    color: #ebd8c1;
+}

@@ -1,0 +1,144 @@
+body {
+    margin: auto;
+    background-color: #21212137;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* background-color: #21212137; */
+    justify-content: center;
+    align-items: stretch;
+    max-width: 60%;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.left_box {
+    margin: 0px;
+    width: 50%;
+    /* height: 100%; */
+    /* align-self:stretch; */
+    background-color: rgb(237, 241, 237);
+}
+.right_box {
+    /* padding-top: 20px; */
+    margin: 0px;
+    width: 50%;
+    /* width: 130%; */
+    /* height: 100%; */
+    /* align-self:stretch; */
+    background-color: rgb(255, 255, 255);
+}
+
+.text {
+    text-align: center;
+}
+
+.paragraph {
+    text-align:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:medium;
+}
+
+.logowithwords{
+    color: #2c3755;
+    text-align: center;
+}
+
+.logo {
+    width: 25px;
+    height: 26px;
+}
+
+.by {
+    text-align: center;
+    color: #999595;
+}
+
+.company_name {
+    text-align: center;
+    color: #2c3755;
+}
+
+
+
+.login {
+    /* padding-top: 40px; */
+    padding-left: 50px;
+}
+
+.welcome {
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size:medium;
+    color: rgb(182, 181, 181);
+}
+
+.label_mail {
+    padding-top: 10px;
+    padding-left: 50px;
+    text-align: center;
+    color: #2c3755;
+}
+
+.label_password {
+    padding-left: 50px;
+    text-align: center;
+    color: #2c3755;
+}
+
+input[type=text], input[type=password] {
+    box-sizing: border-box;
+    border: 1px solid #8c8c8c;
+    border-radius: 6px;
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+::placeholder{
+    left: 3.43%;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: #8C8C8C;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button {
+    display: flex;
+    align-items: center;   /*vertical by def */
+    justify-content: center;  /horizontally/
+    text-decoration: none;
+    border: 1px solid #8c8c8c;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 2px 2px 10px #444a5b;
+    width: 250px;
+    height: 35px;
+    background-color: #d3e22d;
+    color: #2c3755;
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.copyrights {
+    margin-top: 150px;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 15px;
+    color: #999595;
+}
