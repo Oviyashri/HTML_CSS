@@ -504,6 +504,7 @@ body{
     .containers .boxes .left_box {
         min-height: 315px;
         margin: 20px;
+        width: 26%;
         padding: 0%;
       }
 
@@ -519,6 +520,7 @@ body{
       .middle_box {
         min-height: 315px;
         margin: 20px;
+        width: 26%;
         padding: 0%;
       }
 
@@ -534,6 +536,7 @@ body{
       .right_box {
         min-height: 315px;
         margin: 20px;
+        width: 26%;
         padding: 0%;
       }
 
@@ -967,9 +970,6 @@ body{
       margin: 5rem 0;
   }
 }
-
-
-
 
 
 
