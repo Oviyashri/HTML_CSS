@@ -35,7 +35,7 @@ body{
 
 .top_content p {
     padding-top: 50px;
-    width: fit-content;
+    width: 60%;
     font-weight: 300;
     font-size: 1.3rem;
     color: #808080;
@@ -54,10 +54,14 @@ body{
     background: none;
 } 
 
+.containers {
+  margin: auto;
+}
+
 .boxes {
     display: flex;
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     left:50%;
     transform: translateX(-50%);
     box-sizing: border-box;
@@ -75,59 +79,60 @@ body{
     color: #808080;
     text-align: center;
     font-size: 1.2rem;
-    margin: 20px;
+    font-style: italic;
+    margin: auto;
+    width: 70%;
 }
 
 .boxes .left_box, .middle_box, .right_box {
-    padding: 30px 10px;
+    width: 450px;
+    min-height: 250px;
+    padding: 20px 0;
     background-color: #ffffff;
+}
+
+.grey_box {
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    min-height: 370px;
 }
 
 .container2 {
-    display: flex;
-    background-color: #f2f2f2;
-    box-sizing: border-box;
     margin: auto;
+    box-sizing: border-box;
+    min-height: 868px;
 }
 
 .text_content{
-    position: absolute;
+    margin:auto;
     box-sizing: border-box;
-    width: 100%;
-    left: 50%;
+    justify-content: center;
+    width: 660px;
     text-align: center;
     background-color: #ffffff;
-    transform: translateX(-50%);
-    margin-top: 19rem;
+    padding: 50px 0;
 }
 
 .text_content h1 {
-    text-align: center;
-    padding-top: 50px;
     font-weight: 700;
 }
 
 .text_content p {
-    padding: 0 20px; 
-    text-align: center;
     font-size: 1.2rem;
-    margin: 30px;
 }
 
 .row_food_images {
     display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;                 
     background-color: #ffffff;
-    flex-wrap: wrap;
-    margin-top: 30rem;
     gap: 10px;
 }
 
 .row_food_images img {
     object-fit: cover;
+    background-size:cover;
     height: 300px;
     width: 25%;
 }
@@ -135,7 +140,7 @@ body{
 .container2 .row_food_images img {
     background-color: #ffffff;
 
-}
+} 
 
 .container3 {
     position: relative;
@@ -156,6 +161,8 @@ body{
 }
 
 .text_content2 p {
+    margin: auto;
+    width: 65%;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -171,7 +178,9 @@ body{
 }
 
 .text_container .text p{
+    width: 180px;
     color: #808080; 
+    font-style: italic;
 }
 
 .container3 button {
@@ -192,24 +201,40 @@ body{
 
 .container4 {
     display: flex;
-    position: relative;
     justify-content: center;    
     align-items: center;  
     padding: 30px;
 }
 
-.container4 img {
-    width: 250px;
-    height: 250px;
-    padding: 30px;
+.container41 {
+    display: flex;
 }
 
-.container4 .box2, .box4{
+.container41 img {
+    width: 270px;
+    height: 270px;
+    padding: 0 30px;
+}
+
+.container41 .box2, .box4{
     box-sizing: border-box;
     border: solid #bfa065;
-    padding: 30px;
-    width: 250px;
-    height: 250px;
+    border-width: 2px;
+    width: 270px;
+    height: 270px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container41 .box2 h2{
+    padding-top: 25px;
+}
+
+.container41 .box2 p{
+    padding-top: 10px;
 }
 
 .container5 {
@@ -219,6 +244,7 @@ body{
 }
 
 .container5 img{
+    object-fit: cover;
     width: 50%;
 }
 
@@ -229,8 +255,14 @@ body{
     padding-left: 50px;
 }
 
+.container5 .last_content p{
+    margin: 0px;
+    width: 80%;
+}
+
 .container5 button {
     color: #808080;
+    margin-top: 20px;
     padding: 10px 30px;
     border-width: 2px;
     border-radius: 50px;
@@ -254,3 +286,694 @@ body{
 .footer a {
     color: #ebd8c1;
 }
+
+/* desktop small to medium-sized desktop screens and larger laptops */
+@media screen and (min-width: 992px) and (max-width: 1500px) {
+    body {
+      width: 1040px;
+    }
+  
+    .content img{
+      height: 650px;
+      width: 100%;
+    }
+
+    .top_content h1 {
+        font-size: 4.75rem;
+    }
+    
+    .top_content p {
+      margin: 0;
+      padding: 0;
+      font-size: 1.1rem;
+      width: 50%;
+    }
+
+  .top_content button {
+    margin-top: 40px;
+    }
+
+  .containers .boxes{
+      margin-top: -6rem;
+      align-items: center;
+      min-width: 1100px;
+      gap: 0px;
+  }
+
+  .containers .boxes .left_box {
+      margin: 20px;
+      width: 26%;
+      padding: 0%;
+    }
+
+  .boxes .left_box h2{
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .boxes .left_box p{
+    text-align: center;
+  }
+    
+  .middle_box {
+      width: 26%;
+      margin: 20px;
+      padding: 0%;
+    }
+  
+  .boxes .middle_box h2{
+      margin: 10px;
+    }
+
+  .boxes .middle_box p{
+      text-align: center;
+    }
+    
+  .boxes .right_box {
+      width: 26%;
+      margin: 20px;
+      padding: 0%;
+    }
+
+  .boxes .right_box h2{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+  .boxes .right_box p{
+      text-align: center;
+    }
+
+  .grey_box {
+      min-height: 300px;
+    }
+
+  .container2 .text_content{
+      padding-top: 10px;
+      width: 100%;
+    }
+
+  .container2 .text_content h1{
+    font-size: 40px;
+  }
+
+  .container2 .text_content p {
+      text-align: center;
+      width: 50%;
+      margin: auto;
+    }
+
+  .container2 .row_food_images img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .container3 .text_content2 h1 {
+    margin-top: -1rem;
+    font-size: 40px;
+  }
+
+  .container3 .text_content2 p {
+    width: 90%;
+  }
+
+  .container3 .text_container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .container3 .text_container .text {
+    flex: 25%;
+    max-width: 25%;
+  }
+
+  .container3 .text_container .text h3{
+    font-size: 20px;
+  }
+
+  .container3 .text_container .text p{
+    width: 138px;
+    margin: 20px auto 0;
+    font-size: large;
+  }
+
+  .container4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .container41 {
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .container41 img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .container41 .box2{
+    width: 200px;
+    height: 300px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  .box2 h2, p {
+    text-align: left;
+  }
+
+  .container5 {
+    min-height: 500px;
+  }
+
+  .container5 img{
+    height: 650px;
+    object-fit: cover;
+  }
+
+  .container5 .last_content{
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-left: 50px;
+  }
+
+  .container5 .last_content h1{
+    width: 70%;
+  }
+
+  .container5 .last_content p{
+    text-align: justify;
+  }
+
+  .container5 button {
+    margin: 5rem 0;
+  }
+
+}
+
+/* smaller laptops, medium-sized tablets, and larger smartphones in landscape mode */
+@media screen and (min-width:766px) and (max-width: 991px) {
+    .content img {
+        object-fit: cover;
+        background-size: cover;
+        height: 600px;
+    }
+
+    .top_content h1 {
+        font-size: 4.5rem;
+    }
+    
+    .top_content p {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        width: 50%;
+    }
+
+    .containers .boxes{
+        margin-top: -4rem;
+    }
+
+    .containers .boxes .left_box {
+        min-height: 315px;
+        margin: 20px;
+        padding: 0%;
+      }
+
+      .boxes .left_box h2{
+        margin: 10px;
+      }
+    
+      .boxes .left_box p{
+        padding: 0%;
+        text-align: center;
+      }
+
+      .middle_box {
+        min-height: 315px;
+        margin: 20px;
+        padding: 0%;
+      }
+
+      .boxes .middle_box h2{
+        margin: 10px;
+      }
+  
+    .boxes .middle_box p{
+        padding: 0%;
+        text-align: center;
+      }  
+
+      .right_box {
+        min-height: 315px;
+        margin: 20px;
+        padding: 0%;
+      }
+
+      .boxes .right_box h2{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+  
+    .boxes .right_box p{
+        padding: 0%;
+        text-align: center;
+      }
+
+      .container2 .text_content {
+        padding-left: 38px;
+        padding-right: 38px;
+      }
+
+      .container2 .text_content p {
+        margin: auto;
+        max-width: 500px;
+        word-wrap: break-word;
+      }
+
+      .container2 .row_food_images img {
+        height: 350px;
+      }
+
+      .container3 .text_content2 h1 {
+        margin-top: 9px;
+        margin-left: 1px;
+        margin-right: 1px;
+      }
+
+      .container3 .text_container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .container3 .text_container .text {
+        flex: 25%;
+        max-width: 25%;
+      }
+
+      .container3 .text_container .text p{
+        width: 138px;
+        margin: 20px auto 0;
+      }
+
+      .container4 {
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .container41 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .container41 img {
+        width: 300px;
+        height: 230px;
+      }
+
+      .container41 .box2{
+        width: 325px;
+        height: 230px;
+        padding-left: 19px;
+        padding-right: 19px;
+      }
+
+      .box2 h2, p {
+        text-align: left;
+      }
+
+      .container5 {
+        min-height: 332px;
+      }
+
+      .container5 img{
+        object-fit: cover;
+      }
+
+      .container5 .last_content{
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-left: 50px;
+    }
+
+      .container5 .last_content h1{
+        width: 80%;
+      }
+
+    .container5 button {
+        margin: 5rem 0;
+    }
+}
+
+/* smaller tablets and smartphones in landscape mode  */
+@media screen and (min-width:576px) and (max-width: 767px) {
+    .content img {
+        object-fit: cover;
+        background-size: cover;
+        width: 837px;
+        height: 700px;
+    }
+    
+    .top_content h1 {
+        font-size: 3.75rem;
+    }
+    
+    .top_content p {
+        margin: 0;
+        padding: 0;
+        font-size: 1rem;
+        width: 50%;
+    }
+
+    .top_content button {
+        margin-top: 20px;
+    }
+
+    .containers .boxes{
+        display: flex;
+        flex-direction: column;
+        margin-top: -10rem;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .containers .boxes .left_box {
+        margin-top: 20px;
+        width: 60%;
+        padding: 0%;
+      }
+      
+      .middle_box {
+        width: 60%;
+        margin: 20px;
+        padding: 0%;
+      }
+      
+      .right_box {
+        width: 60%;
+        margin: 20px;
+        padding: 0%;
+      }
+
+      .grey_box {
+        height: 55rem;
+      }
+
+      .container2 {
+        min-height: 1183px;
+        width: 540px;
+      }
+
+      .container2 .text_content{
+        width: 500px;
+      }
+
+      .container2 .text_content p {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+      }
+
+      .container2 .row_food_images{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container2 .row_food_images img{
+        width: 100%;
+      }
+
+      .container3 .text_container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .container3 .text_container .text {
+        flex-direction: column;
+        flex: 100%;
+        max-width: 100%;
+        padding: 0%;
+        padding-left: 14px;
+        padding-right: 14px
+      }
+
+      .container3 .text_container .text p{
+        width: 110px;
+        margin: 20px auto 0;
+      }
+
+      .container3 button{
+        margin-top: 4rem;
+      }
+
+      .container4 {
+        display: flex;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .container41 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .container41 img {
+        width: 80%;
+        height: 250px;
+        padding: 0%;
+      }
+
+      .container41 .box2{
+        width: 80%;
+        height: 180px;
+        padding-left: 19px;
+        padding-right: 19px;
+      }
+
+      .box2 h2, p {
+        text-align: left;
+      }
+
+      .container5 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container5 img{
+        min-height: 461px;
+        width: 100%;
+      }
+
+      .container5 .last_content{
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        padding-left: 50px;
+    }
+
+      .container5 .last_content h1{
+        width: 80%;
+      }
+
+    .container5 button {
+        margin: 5rem 0;
+    }
+}
+
+/* smaller smartphones in portrait mode  */
+@media screen and (min-width: 300px) and (max-width: 575px) {
+    body{
+        width: 440px;
+    }
+
+    .content {
+      background-position: 35.39% 50%;
+    }
+
+    .content img {
+        height: 890px;
+        object-fit: cover;
+        background-size: cover;
+    }
+    
+    .top_content h1 {
+        margin-top: 6rem;
+        font-size: 3rem;
+    }
+    
+    .top_content p {
+        margin: 40px 0 0;
+        padding: 0;
+        text-align: justify;
+        font-size: 1.2rem;
+        width: 60%;
+    }
+
+    .top_content button {
+      margin-top: 40px;
+  }
+
+  .containers .boxes{
+      display: flex;
+      flex-direction: column;
+      margin-top: -20rem;
+      align-items: center;
+      gap: 0px;
+  }
+
+  .containers .boxes .left_box {
+      margin-top: 20px;
+      width: 60%;
+      padding: 0%;
+    }
+    
+    .middle_box {
+      width: 60%;
+      margin: 20px;
+      padding: 0%;
+    }
+    
+    .right_box {
+      width: 60%;
+      margin: 20px;
+      padding: 0%;
+    }
+
+    .grey_box {
+      height: 55rem;
+    }
+
+    .container2 .text_content{
+      width: 500px;
+    }
+
+    .container2 .text_content p {
+      text-align: center;
+      width: 60%;
+      margin: auto;
+    }
+
+    .container2 .row_food_images{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container2 .row_food_images img{
+      margin: auto;
+      width: 300px;
+      height: 300px;
+    }
+
+    .container3 .text_container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .container3 .text_content2 p{
+      margin: auto;
+      width: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .container3 .text_container{
+      padding-top: 30px;
+    }
+
+    .container3 .text_container .text {
+      flex-direction: column;
+      flex: 100%;
+      max-width: 100%;
+      padding: 0%;
+      padding-left: 14px;
+      padding-right: 14px
+    }
+
+    .container3 .text_container .text p{
+      width: 110px;
+      margin: 20px auto 0;
+    }
+
+    .container3 button{
+      margin-top: 6rem;
+    }
+
+    .container4 {
+      display: flex;
+      margin-bottom: 2rem;
+    }
+
+    .container41 {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .container41 img {
+      width: 350px;
+      height: 220px;
+      padding: 0%;
+    }
+
+    .container41 .box2{
+      width: 350px;
+      height: 220px;
+      padding-left: 19px;
+      padding-right: 19px;
+    }
+
+    .box2 h2, p {
+      text-align: left;
+    }
+
+    .container5 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container5 img{
+      width: 100%;
+    }
+
+    .container5 .last_content{
+      align-items: center;
+      justify-content: center;
+      padding-top: 1rem;
+      padding-left: 50px;
+  }
+
+    .container5 .last_content h1{
+      font-size: 180%;
+      width: 100%;
+    }
+
+    .container5 .last_content p{
+      text-align: justify;
+    }    
+
+  .container5 button {
+      margin: 5rem 0;
+  }
+}
+
+
+
+
+
+
+/* mobile phones (landscape mode)  */
+/* @media screen and (min-width: 568px) and (max-width:667px) {
+
+} */
